@@ -1,0 +1,49 @@
+export default function Hero() {
+  return (
+    <section className="relative overflow-hidden bg-gradient-to-br from-black via-[#0b1f14] to-black text-white">
+      <div className="mx-auto max-w-7xl px-6 py-24 text-center">
+
+        {/* Badge */}
+        <div className="mb-6 inline-flex items-center gap-2 rounded-full bg-green-500/10 px-4 py-2 text-sm font-medium text-green-400">
+          <span className="h-2 w-2 rounded-full bg-green-400"></span>
+          Available for New Projects
+        </div>
+
+        {/* Heading */}
+        <h1 className="text-4xl font-extrabold leading-tight md:text-6xl">
+          Dominate Search Rankings <br />
+          <span className="text-green-400">& Grow Your Business</span>
+        </h1>
+
+        {/* Description */}
+        <p className="mx-auto mt-6 max-w-2xl text-lg text-gray-300">
+          I help businesses increase organic traffic, improve search visibility,
+          and drive sustainable growth through strategic, data-driven SEO solutions.
+        </p>
+
+        {/* Buttons */}
+        <div className="mt-10 flex flex-wrap justify-center gap-4">
+          <a
+            href="#audit"
+            className="inline-flex items-center gap-2 rounded-lg bg-green-500 px-6 py-3 font-semibold text-black transition hover:bg-green-400"
+          >
+            Get Your Free SEO Audit
+            <span>→</span>
+          </a>
+
+          <a
+            href="#case-studies"
+            className="rounded-lg border border-white/20 px-6 py-3 font-semibold text-white transition hover:bg-white/10"
+          >
+            View Case Studies
+          </a>
+        </div>
+      </div>
+
+      {/* Glow Effect */}
+      <div className="pointer-events-none absolute inset-0 -z-10">
+        <div className="absolute left-1/2 top-1/2 h-[500px] w-[500px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-green-500/20 blur-[150px]" />
+      </div>
+    </section>
+  );
+}
