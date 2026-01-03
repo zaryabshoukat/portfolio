@@ -1,39 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>SEO Portfolio</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+    <meta charset="UTF-8">
+    <title>Dominate Search Rankings & Grow Your Business</title>
+
+    <!-- SEO META -->
+    <meta name="description" content="I help businesses increase organic traffic, improve search visibility, and drive sustainable growth through strategic, data-driven SEO solutions.">
+    <meta name="robots" content="index, follow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
+
+        body {
+            background: radial-gradient(circle at top, #0f3d2e, #020b07);
+            color: #ffffff;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .hero {
+            max-width: 900px;
+            text-align: center;
+        }
+
+        .badge {
+            display: inline-block;
+            background: rgba(0, 255, 153, 0.15);
+            color: #00ff99;
+            padding: 8px 16px;
+            border-radius: 999px;
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: clamp(32px, 5vw, 56px);
+            font-weight: 800;
+            line-height: 1.1;
+            margin-bottom: 20px;
+        }
+
+        h1 span {
+            color: #00ff99;
+        }
+
+        p {
+            font-size: 18px;
+            color: #cfd8d3;
+            max-width: 700px;
+            margin: 0 auto 35px;
+            line-height: 1.6;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn-primary {
+            background: #00ff99;
+            color: #02140c;
+            padding: 14px 28px;
+            border-radius: 10px;
+            font-weight: 700;
+            text-decoration: none;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(0, 255, 153, 0.3);
+        }
+
+        .btn-secondary {
+            border: 1px solid rgba(255,255,255,0.25);
+            color: #ffffff;
+            padding: 14px 28px;
+            border-radius: 10px;
+            text-decoration: none;
+            transition: background 0.2s ease, border 0.2s ease;
+        }
+
+        .btn-secondary:hover {
+            background: rgba(255,255,255,0.08);
+            border-color: rgba(255,255,255,0.4);
+        }
+    </style>
 </head>
-<body class="bg-black text-white">
 
-<section class="min-h-screen flex items-center justify-center text-center px-6">
-  <div>
-    <div class="mb-6 inline-flex items-center gap-2 rounded-full bg-green-500/10 px-4 py-2 text-sm text-green-400">
-      <span class="h-2 w-2 rounded-full bg-green-400"></span>
-      Available for New Projects
-    </div>
+<body>
+    <section class="hero">
+        <div class="badge">🚀 Available for New Projects</div>
 
-    <h1 class="text-4xl md:text-6xl font-extrabold">
-      Dominate Search Rankings <br />
-      <span class="text-green-400">& Grow Your Business</span>
-    </h1>
+        <h1>
+            Dominate Search Rankings <br>
+            <span>& Grow Your Business</span>
+        </h1>
 
-    <p class="mt-6 max-w-2xl mx-auto text-gray-300">
-      I help businesses increase organic traffic, improve search visibility,
-      and drive sustainable growth through strategic, data-driven SEO solutions.
-    </p>
+        <p>
+            I help businesses increase organic traffic, improve search visibility,
+            and drive sustainable growth through strategic, data-driven SEO solutions.
+        </p>
 
-    <div class="mt-10 flex justify-center gap-4">
-      <a href="#" class="bg-green-500 text-black px-6 py-3 rounded-lg font-semibold">
-        Get Your Free SEO Audit
-      </a>
-      <a href="#" class="border border-white/20 px-6 py-3 rounded-lg">
-        View Case Studies
-      </a>
-    </div>
-  </div>
-</section>
-
+        <div class="buttons">
+            <a href="#audit" class="btn-primary">Get Your Free SEO Audit</a>
+            <a href="#case-studies" class="btn-secondary">View Case Studies</a>
+        </div>
+    </section>
 </body>
 </html>
