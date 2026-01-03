@@ -24,15 +24,73 @@
             background: radial-gradient(circle at top, #0f3d2e, #020b07);
             color: #ffffff;
             min-height: 100vh;
+            padding-top: 90px;
+        }
+
+        /* ================= HEADER ================= */
+        .site-header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 999;
+            background: rgba(5, 12, 9, 0.85);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(0, 255, 153, 0.08);
+        }
+
+        .header-container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 18px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            font-size: 20px;
+            font-weight: 800;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .logo span {
+            color: #00ff99;
+        }
+
+        nav {
+            display: flex;
+            gap: 26px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #cfd8d3;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            color: #00ff99;
+        }
+
+        .header-btn {
+            background: #00ff99;
+            color: #02140c;
+            padding: 10px 18px;
+            border-radius: 10px;
+            font-weight: 700;
+            text-decoration: none;
+        }
+
+        /* ================= HERO ================= */
+        .hero {
+            min-height: 85vh;
             display: flex;
             align-items: center;
             justify-content: center;
-            padding: 20px;
-        }
-
-        .hero {
-            max-width: 900px;
             text-align: center;
+            padding: 20px;
         }
 
         .badge {
@@ -56,7 +114,7 @@
             color: #00ff99;
         }
 
-        p {
+        .hero p {
             font-size: 18px;
             color: #cfd8d3;
             max-width: 700px;
@@ -78,12 +136,6 @@
             border-radius: 10px;
             font-weight: 700;
             text-decoration: none;
-            transition: transform 0.2s ease, box-shadow 0.2s ease;
-        }
-
-        .btn-primary:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 10px 30px rgba(0, 255, 153, 0.3);
         }
 
         .btn-secondary {
@@ -92,18 +144,63 @@
             padding: 14px 28px;
             border-radius: 10px;
             text-decoration: none;
-            transition: background 0.2s ease, border 0.2s ease;
         }
 
-        .btn-secondary:hover {
-            background: rgba(255,255,255,0.08);
-            border-color: rgba(255,255,255,0.4);
+        /* ================= QUICK TRUST ================= */
+        .quick-value {
+            padding: 80px 20px;
+        }
+
+        .qv-container {
+            max-width: 1100px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+
+        .qv-box {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(0, 255, 153, 0.08);
+            border-radius: 16px;
+            padding: 30px;
+        }
+
+        .qv-box h3 {
+            color: #00ff99;
+            margin-bottom: 12px;
+        }
+
+        .qv-box p {
+            color: #cfd8d3;
+            line-height: 1.6;
+        }
+
+        @media (max-width: 900px) {
+            nav { display: none; }
+            .qv-container { grid-template-columns: 1fr; }
         }
     </style>
 </head>
 
 <body>
-    <section class="hero">
+
+<header class="site-header">
+    <div class="header-container">
+        <div class="logo"><span>●</span> Zaryab Shoukat</div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Case Studies</a>
+            <a href="#">Contact</a>
+        </nav>
+        <a href="#audit" class="header-btn">Get Free Audit</a>
+    </div>
+</header>
+
+<section class="hero">
+    <div>
         <div class="badge">🚀 Available for New Projects</div>
 
         <h1>
@@ -120,6 +217,25 @@
             <a href="#audit" class="btn-primary">Get Your Free SEO Audit</a>
             <a href="#case-studies" class="btn-secondary">View Case Studies</a>
         </div>
-    </section>
+    </div>
+</section>
+
+<section class="quick-value">
+    <div class="qv-container">
+        <div class="qv-box">
+            <h3>Data-Driven SEO</h3>
+            <p>Every decision is backed by analytics, research, and proven SEO strategies.</p>
+        </div>
+        <div class="qv-box">
+            <h3>White-Hat Only</h3>
+            <p>Safe, ethical SEO methods that build long-term rankings and authority.</p>
+        </div>
+        <div class="qv-box">
+            <h3>Results Focused</h3>
+            <p>Traffic, rankings, and leads — not vanity metrics.</p>
+        </div>
+    </div>
+</section>
+
 </body>
 </html>
